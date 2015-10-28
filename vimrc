@@ -30,4 +30,4 @@ set imsearch=-1
 syntax on
 filetype plugin indent on
 
-nmap <C-L> :nohlsearch<CR>
+nnoremap <C-L> :nohlsearch<CR>
