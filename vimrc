@@ -31,3 +31,4 @@ syntax on
 filetype plugin indent on
 
 nnoremap <C-L> :nohlsearch<CR>
+vnoremap . :normal .<CR>
