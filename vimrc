@@ -8,10 +8,8 @@ set smartcase
 set showcmd
 set number
 set ruler
-set textwidth=79
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set encoding=utf8
 set fileencoding=utf-8
@@ -23,7 +21,6 @@ set history=100
 set wildmode=longest,full
 set wildmenu
 set autoindent
-set smartindent
 set iminsert=0
 set imsearch=-1
 
