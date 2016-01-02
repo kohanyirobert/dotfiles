@@ -24,6 +24,12 @@ set autoindent
 set iminsert=0
 set imsearch=-1
 
+filetype off
+set rtp+=$HOME/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'editorconfig/editorconfig-vim'
+call vundle#end()
 syntax on
 filetype plugin indent on
 
