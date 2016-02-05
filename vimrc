@@ -33,5 +33,14 @@ call vundle#end()
 syntax on
 filetype plugin indent on
 
-nnoremap <C-L> :nohlsearch<CR>
-vnoremap . :normal .<CR>
+nnoremap <c-l> :nohlsearch<cr>
+noremap . :normal .<cr>
+inoremap jk <esc>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+noremap <up> <nop>
+noremap <down> <nop>
+noremap <left> <nop>
+noremap <right> <nop>
