@@ -36,6 +36,7 @@ filetype plugin indent on
 nnoremap <c-l> :nohlsearch<cr>
 noremap . :normal .<cr>
 inoremap jk <esc>
+inoremap <esc> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
