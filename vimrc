@@ -24,6 +24,8 @@ set autoindent
 set iminsert=0
 set imsearch=-1
 
+let mapleader=","
+
 filetype off
 set rtp+=$HOME/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -35,13 +37,14 @@ filetype plugin indent on
 
 nnoremap <c-l> :nohlsearch<cr>
 noremap . :normal .<cr>
-inoremap jk <esc>
-inoremap <esc> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+noremap <leader>w :write<cr>
 noremap <up> <nop>
 noremap <down> <nop>
 noremap <left> <nop>
 noremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+inoremap jk <esc>
+inoremap <esc> <nop>
