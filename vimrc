@@ -24,7 +24,7 @@ set autoindent
 set iminsert=0
 set imsearch=-1
 
-let mapleader=","
+let mapleader=','
 
 filetype off
 set rtp+=$HOME/.vim/bundle/Vundle.vim
