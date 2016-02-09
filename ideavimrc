@@ -1,1 +1,3 @@
 source ~/.vimrc
+
+noremap <leader>b :action ToggleLineBreakpoint<cr>

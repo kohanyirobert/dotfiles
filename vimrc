@@ -36,7 +36,6 @@ syntax on
 filetype plugin indent on
 
 nnoremap <c-l> :nohlsearch<cr>
-noremap . :normal .<cr>
 noremap <leader>w :write<cr>
 noremap <up> <nop>
 noremap <down> <nop>
