@@ -1,8 +1,2 @@
-source ~/.vimrc
-
-noremap <leader>b :action ToggleLineBreakpoint<cr>
-noremap <leader>r :action Resume<cr>
-noremap <leader>i :action StepInto<cr>
-noremap <leader>o :action StepOut<cr>
-noremap <leader>n :action StepOver<cr>
-noremap <leader>c :action RunToCursor<cr>
+source ~/.vim/common.vim
+source ~/.ideavim/mappings.vim
