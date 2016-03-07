@@ -1,0 +1,20 @@
+[alias]
+  a = add
+  d = diff
+  l = log
+  f = fetch
+  s = status --short
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  su = submodule
+  sh = stash
+  dt = difftool
+  mt = mergetool
+  pl = pull
+  pu = push
+  rp = rev-parse
+  last = log -1 HEAD
+  la = log -1 HEAD
+  cp = cherry-pick

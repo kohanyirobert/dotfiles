@@ -1,0 +1,15 @@
+[core]
+  excludesfile = ~/.gitignore_global
+[init]
+  templatedir = ~/.git_template
+[push]
+  default = simple
+[diff]
+  tool = p4merge
+[merge]
+  tool = p4merge
+[difftool]
+  prompt = false
+[mergetool]
+  prompt = false
+  keepBackup = false
