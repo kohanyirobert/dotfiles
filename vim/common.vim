@@ -31,10 +31,16 @@ set rtp+=$HOME/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'sjl/gundo.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 call vundle#end()
 syntax on
 filetype plugin indent on
+
+let g:ctrlp_map='<leader>o'
+let g:ctrlp_cmd='CtrlP'
+let g:ctrlp_custom_ignore={'dir': 'node_modules'}
 
 let g:syntastic_mode_map={"mode": "passive"}
 let g:syntastic_always_populate_loc_list=1

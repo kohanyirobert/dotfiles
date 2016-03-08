@@ -1,5 +1,6 @@
 nnoremap <c-l> :nohlsearch<cr>
 nnoremap <s-q> <nop>
+nnoremap <f5> :GundoToggle<cr>
 noremap <leader>w :write<cr>
 noremap <leader>q :quit<cr>
 noremap <leader>s :split<cr>

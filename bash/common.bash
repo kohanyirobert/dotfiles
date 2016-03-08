@@ -40,7 +40,6 @@ _vim_server() {
       vim --servername $servername --remote-silent "$@"
     fi
   else
-    echo 5
     vim --servername $servername "$@"
   fi
   _vim_server_foreground $servername
