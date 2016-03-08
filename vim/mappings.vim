@@ -1,13 +1,14 @@
 nnoremap <c-l> :nohlsearch<cr>
 nnoremap <s-q> <nop>
 nnoremap <f5> :GundoToggle<cr>
+nnoremap <leader>o :CtrlP<cr>
+nnoremap <leader>b :CtrlPBuffer<cr>
 noremap <leader>w :write<cr>
 noremap <leader>q :quit<cr>
 noremap <leader>s :split<cr>
 noremap <leader>v :vsplit<cr>
 noremap <leader>e :edit<space>
 noremap <leader>l :buffers<cr>
-noremap <leader>b :buffers<cr>:buffer<space>
 noremap <leader>d :bdelete<cr>
 noremap <leader>n :bnext<cr>
 noremap <leader>p :bprevious<cr>
