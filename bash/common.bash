@@ -42,7 +42,11 @@ _vim_server() {
   else
     vim --servername $servername "$@"
   fi
-  _vim_server_foreground $servername
+  vim --serverlist | grep -qi "^$servername$"
+  if [ $? -eq 0 ]
+  then
+    _vim_server_foreground $servername
+  fi
 }
 _gvim_server() {
   servername=$1
