@@ -24,8 +24,6 @@ set autoindent
 set iminsert=0
 set imsearch=-1
 
-let mapleader=','
-
 filetype off
 set rtp+=$HOME/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -34,6 +32,8 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'sjl/gundo.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-session'
 call vundle#end()
 syntax on
 filetype plugin indent on
@@ -46,3 +46,8 @@ let g:syntastic_auto_loc_list=1
 let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
 let g:syntastic_javascript_checkers=['eslint']
+
+let g:session_autosave='yes'
+let g:session_autosave_periodic='yes'
+let g:session_persist_font=0
+let g:session_persist_colors=0
