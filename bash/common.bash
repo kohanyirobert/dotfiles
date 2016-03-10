@@ -81,10 +81,12 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 export NLS_CHARACTERSET=AL32UTF8
 export NLS_LANG=.AL32UTF8
 export HH_CONFIG=hicolor,keywords
-export HISTCONTROL=ignorespace
-export HISTFILESIZE=10000
-export HISTSIZE=${HISTFILESIZE}
-export PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"
+export HISTCONTROL=ignorespace:ignoredups:erasedups
+export HISTSIZE=1000000
+export HISTFILESIZE=$HISTSIZE
+export HISTTIMEFORMAT='%F %T '
+export HISTIGNORE='cd:ls:fg:hh'
+export PROMPT_COMMAND="history -a; ${PROMPT_COMMAND}"
 
 export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
 export KDIFF3_HOME="/Applications/kdiff3.app/Contents"
@@ -104,12 +106,13 @@ export JAVA_HOME=$JAVA_8_HOME
 
 PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 PATH="/usr/local/sbin:/usr/local/bin:$PATH"
-PATH="$HOME/bin:$PATH"
+PATH="$HOME/pfctl:$HOME/bin:$PATH"
 PATH="$KDIFF3_HOME/MacOS:$PATH"
 PATH="$IDEA_HOME/MacOS:$PATH"
 PATH="$INSTANTCLIENT_HOME:$PATH"
 export PATH
 
+alias u='history -n'
 alias pong='_pong'
 alias v='_vim_server VIM'
 alias vs='_vim_server'
