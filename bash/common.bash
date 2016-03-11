@@ -98,24 +98,18 @@ export LUNCHY_HOME="$(dirname `gem which lunchy`)/../extras"
 export SDKMAN_HOME="$HOME/.sdkman"
 export SDKMAN_HOME="/Applications/MacVim.app/MacOS"
 
+export JAVA_6_HOME=$(/usr/libexec/java_home -v1.6)
+export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
+export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+
+export JAVA_HOME=$JAVA_8_HOME
+
 PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 PATH="/usr/local/sbin:/usr/local/bin:$PATH"
 PATH="$HOME/pfctl:$HOME/bin:$PATH"
 PATH="$KDIFF3_HOME/MacOS:$PATH"
 PATH="$IDEA_HOME/MacOS:$PATH"
 PATH="$INSTANTCLIENT_HOME:$PATH"
-
-export JAVA_6_HOME=$(/usr/libexec/java_home -v1.6)
-export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
-export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
-export JAVA_HOME=$JAVA_8_HOME
-
-export JAVA_6_HOME_PATH="$JAVA_6_HOME/bin:$PATH"
-export JAVA_7_HOME_PATH="$JAVA_7_HOME/bin:$PATH"
-export JAVA_8_HOME_PATH="$JAVA_8_HOME/bin:$PATH"
-export JAVA_HOME_PATH="$JAVA_HOME/bin:$PATH"
-
-PATH="$JAVA_HOME_PATH"
 export PATH
 
 alias u='history -n'
@@ -132,9 +126,9 @@ alias cls='clear'
 alias rm='rm -i'
 alias pa='ps aux | grep -v grep | grep'
 alias bd='. bd -si'
-alias java6='export JAVA_HOME="$JAVA_6_HOME" && export PATH="$JAVA_6_HOME_PATH"'
-alias java7='export JAVA_HOME="$JAVA_7_HOME" && export PATH="$JAVA_7_HOME_PATH"'
-alias java8='export JAVA_HOME="$JAVA_8_HOME" && export PATH="$JAVA_8_HOME_PATH"'
+alias java6='export JAVA_HOME=$JAVA_6_HOME'
+alias java7='export JAVA_HOME=$JAVA_7_HOME'
+alias java8='export JAVA_HOME=$JAVA_8_HOME'
 alias docker-env='eval $(docker-machine env)'
 alias docker-rm='docker ps -aq | xargs docker rm'
 alias docker-kill='docker ps -aq | xargs docker kill'
