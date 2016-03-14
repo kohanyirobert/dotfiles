@@ -95,8 +95,6 @@ export INSTANTCLIENT_HOME="$HOME/oracle/instantclient_11_2"
 export DYLD_LIBRARY_PATH="$INSTANTCLIENT_HOME"
 export PDFTK_HOME="/opt/pdflabs/pdftk"
 export LUNCHY_HOME="$(dirname `gem which lunchy`)/../extras"
-export SDKMAN_HOME="$HOME/.sdkman"
-export SDKMAN_HOME="/Applications/MacVim.app/MacOS"
 
 export JAVA_6_HOME=$(/usr/libexec/java_home -v1.6)
 export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
@@ -143,11 +141,6 @@ fi
 if [ -f $LUNCHY_HOME/lunchy-completion.bash ]
 then
   source $LUNCHY_HOME/lunchy-completion.bash
-fi
-
-if [ -f $SDKMAN_HOME/bin/sdkman-init.sh ]
-then
-  source $SDKMAN_HOME/bin/sdkman-init.sh
 fi
 
 if [[ $- =~ .*i.* ]]
