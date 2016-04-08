@@ -81,6 +81,7 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 export NLS_CHARACTERSET=AL32UTF8
 export NLS_LANG=.AL32UTF8
 export HH_CONFIG=hicolor,keywords
+export HH_PROMPT='$ '
 export HISTCONTROL=ignorespace:ignoredups:erasedups
 export HISTSIZE=1000000
 export HISTFILESIZE=$HISTSIZE

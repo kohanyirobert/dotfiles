@@ -23,6 +23,10 @@ set wildmenu
 set autoindent
 set iminsert=0
 set imsearch=-1
+set undofile
+set undodir=$HOME/.vim/undo
+set undolevels=1000
+set undoreload=10000
 
 filetype off
 set rtp+=$HOME/.vim/bundle/Vundle.vim
