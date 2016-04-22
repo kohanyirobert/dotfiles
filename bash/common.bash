@@ -97,6 +97,8 @@ export DYLD_LIBRARY_PATH="$INSTANTCLIENT_HOME"
 export PDFTK_HOME="/opt/pdflabs/pdftk"
 export LUNCHY_HOME="$(dirname `gem which lunchy`)/../extras"
 
+export GRADLE_HOME="/usr/local/opt/gradle/libexec"
+
 export JAVA_6_HOME=$(/usr/libexec/java_home -v1.6)
 export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
 export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
@@ -109,6 +111,7 @@ PATH="$HOME/pfctl:$HOME/bin:$PATH"
 PATH="$KDIFF3_HOME/MacOS:$PATH"
 PATH="$IDEA_HOME/MacOS:$PATH"
 PATH="$INSTANTCLIENT_HOME:$PATH"
+PATH="$GRADLE_HOME/bin:$PATH"
 export PATH
 
 alias u='history -n'

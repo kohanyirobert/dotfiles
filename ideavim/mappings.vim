@@ -23,6 +23,4 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 inoremap jk <esc>
-inoremap kj <esc>
-inoremap jj <esc>
 inoremap <esc> <nop>
