@@ -1,6 +1,6 @@
 nnoremap <c-l> :nohlsearch<cr>
 nnoremap <s-q> <nop>
-nnoremap <f5> :GundoToggle<cr>
+nnoremap <f5> :UndotreeToggle<cr>
 nnoremap <leader>o :CtrlP<cr>
 nnoremap <leader>b :CtrlPBuffer<cr>
 noremap <leader>w :write<cr>
