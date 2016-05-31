@@ -86,7 +86,7 @@ export HISTCONTROL=ignorespace:ignoredups:erasedups
 export HISTSIZE=1000000
 export HISTFILESIZE=$HISTSIZE
 export HISTTIMEFORMAT='%F %T '
-export HISTIGNORE='cd:ls:fg:hh'
+export HISTIGNORE='fg:hh'
 export PROMPT_COMMAND="history -a; ${PROMPT_COMMAND}"
 
 export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
@@ -135,7 +135,10 @@ alias docker-env='eval $(docker-machine env)'
 alias docker-rm='docker ps -aq | xargs docker rm'
 alias docker-kill='docker ps -aq | xargs docker kill'
 
-docker-env
+if [ $(docker-machine status) != 'Stopped' ]
+then
+  docker-env
+fi
 
 if [ -f $(brew --prefix)/etc/bash_completion ]
 then
