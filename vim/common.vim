@@ -38,6 +38,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'posva/vim-vue'
 call vundle#end()
 syntax on
 filetype plugin indent on
