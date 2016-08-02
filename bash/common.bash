@@ -107,7 +107,7 @@ export JAVA_HOME=$JAVA_8_HOME
 
 PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 PATH="/usr/local/sbin:/usr/local/bin:$PATH"
-PATH="$HOME/pfctl:$HOME/bin:$PATH"
+PATH="$HOME/git/pfctl-helper:$HOME/bin:$PATH"
 PATH="$KDIFF3_HOME/MacOS:$PATH"
 PATH="$IDEA_HOME/MacOS:$PATH"
 PATH="$INSTANTCLIENT_HOME:$PATH"

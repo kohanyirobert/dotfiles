@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>My settings</name>
+    <item>
+      <name>English</name>
+      <identifier>private.change_input_source_to_english</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::E, ModifierFlag::FN,
+        KeyCode::VK_CHANGE_INPUTSOURCE_US
+      </autogen>
+    </item>
+    <item>
+      <name>Hungarian</name>
+      <identifier>private.change_input_source_to_hungarian</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::M, ModifierFlag::FN,
+        KeyCode::VK_CHANGE_INPUTSOURCE_HUNGARIAN
+      </autogen>
+    </item>
+    <item>
+      <name>Japanese</name>
+      <identifier>private.change_input_source_to_japanese</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::J, ModifierFlag::FN,
+        KeyCode::VK_CHANGE_INPUTSOURCE_JAPANESE
+      </autogen>
+    </item>
+  </item>
+</root>
