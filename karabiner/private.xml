@@ -3,31 +3,67 @@
   <item>
     <name>My settings</name>
     <item>
-      <name>English</name>
-      <identifier>private.change_input_source_to_english</identifier>
-      <autogen>
-        __KeyToKey__
-        KeyCode::E, ModifierFlag::FN,
-        KeyCode::VK_CHANGE_INPUTSOURCE_US
-      </autogen>
+      <name>Input Sources</name>
+      <item>
+        <name>English</name>
+        <identifier>private.change_input_source_to_english</identifier>
+        <autogen>
+          __KeyToKey__
+          KeyCode::E, ModifierFlag::FN,
+          KeyCode::VK_CHANGE_INPUTSOURCE_US
+        </autogen>
+      </item>
+      <item>
+        <name>Hungarian</name>
+        <identifier>private.change_input_source_to_hungarian</identifier>
+        <autogen>
+          __KeyToKey__
+          KeyCode::M, ModifierFlag::FN,
+          KeyCode::VK_CHANGE_INPUTSOURCE_HUNGARIAN
+        </autogen>
+      </item>
+      <item>
+        <name>Japanese</name>
+        <identifier>private.change_input_source_to_japanese</identifier>
+        <autogen>
+          __KeyToKey__
+          KeyCode::J, ModifierFlag::FN,
+          KeyCode::VK_CHANGE_INPUTSOURCE_JAPANESE
+        </autogen>
+      </item>
     </item>
     <item>
-      <name>Hungarian</name>
-      <identifier>private.change_input_source_to_hungarian</identifier>
-      <autogen>
-        __KeyToKey__
-        KeyCode::M, ModifierFlag::FN,
-        KeyCode::VK_CHANGE_INPUTSOURCE_HUNGARIAN
-      </autogen>
-    </item>
-    <item>
-      <name>Japanese</name>
-      <identifier>private.change_input_source_to_japanese</identifier>
-      <autogen>
-        __KeyToKey__
-        KeyCode::J, ModifierFlag::FN,
-        KeyCode::VK_CHANGE_INPUTSOURCE_JAPANESE
-      </autogen>
+      <name>AltGr</name>
+      <item>
+        <name>@</name>
+        <inputsource_only>HUNGARIAN</inputsource_only>
+        <identifier>private.altgr_atsign</identifier>
+        <autogen>
+          __KeyToKey__
+          KeyCode::V, ModifierFlag::OPTION_R,
+          KeyCode::Q, ModifierFlag::OPTION_R
+        </autogen>
+      </item>
+      <item>
+        <name>&</name>
+        <inputsource_only>HUNGARIAN</inputsource_only>
+        <identifier>private.altgr_ampersand</identifier>
+        <autogen>
+          __KeyToKey__
+          KeyCode::C, ModifierFlag::OPTION_R,
+          KeyCode::KEY_1, ModifierFlag::OPTION_R
+        </autogen>
+      </item>
+      <item>
+        <name>*</name>
+        <inputsource_only>HUNGARIAN</inputsource_only>
+        <identifier>private.altgr_asterisk</identifier>
+        <autogen>
+          __KeyToKey__
+          KeyCode::SLASH, ModifierFlag::OPTION_R,
+          KeyCode::COMMA, ModifierFlag::OPTION_R|ModifierFlag::SHIFT_R
+        </autogen>
+      </item>
     </item>
   </item>
 </root>
