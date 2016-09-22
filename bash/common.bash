@@ -131,14 +131,8 @@ alias bd='. bd -si'
 alias java6='export JAVA_HOME=$JAVA_6_HOME'
 alias java7='export JAVA_HOME=$JAVA_7_HOME'
 alias java8='export JAVA_HOME=$JAVA_8_HOME'
-alias docker-env='eval $(docker-machine env)'
 alias docker-rm='docker ps -aq | xargs docker rm'
 alias docker-kill='docker ps -aq | xargs docker kill'
-
-if [ $(docker-machine status) != 'Stopped' ]
-then
-  docker-env
-fi
 
 if [ -f $(brew --prefix)/etc/bash_completion ]
 then
