@@ -125,7 +125,9 @@ alias ls='ls --color=always'
 alias grep='grep --color=always'
 alias cl='clear'
 alias cls='clear'
-alias rm='rm -i'
+alias rm="echo use 'thrash' or 'del' instead or use rm via its fullpath '/bin/rm'"
+alias del="rmtrash"
+alias thrash="rmtrash"
 alias pa='ps aux | grep -v grep | grep'
 alias bd='. bd -si'
 alias java6='export JAVA_HOME=$JAVA_6_HOME'
