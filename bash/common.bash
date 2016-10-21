@@ -151,4 +151,9 @@ then
   bind '"\C-r": "\C-a\C-khh\C-j"'
 fi
 
+if [ -z "$SSH_AUTH_SOCK" ]
+then
+  eval $(ssh-agent -s)
+fi
+
 complete -C aws_completer aws
