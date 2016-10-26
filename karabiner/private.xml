@@ -5,7 +5,7 @@
     <item>
       <name>Function keys</name>
       <identifier>private.change_media_keys_to_function_keys</identifier>
-      <only>IntelliJ</only>
+      <only>IntelliJ, NetBeans</only>
       <autogen>__ConsumerToKey__ ConsumerKeyCode::BRIGHTNESS_DOWN, KeyCode::F1</autogen>
       <autogen>__ConsumerToKey__ ConsumerKeyCode::BRIGHTNESS_UP, KeyCode::F2</autogen>
       <autogen>__KeyToKey__ KeyCode::EXPOSE_ALL, KeyCode::F3</autogen>
