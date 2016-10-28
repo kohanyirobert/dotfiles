@@ -99,11 +99,16 @@ export LUNCHY_HOME="$(dirname `gem which lunchy`)/../extras"
 
 export GRADLE_HOME="/usr/local/opt/gradle/libexec"
 
-export JAVA_6_HOME=$(/usr/libexec/java_home -v1.6)
-export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
-export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
-
-export JAVA_HOME=$JAVA_8_HOME
+for v in {6,7,8}
+do
+  _JAVA_HOME=$(/usr/libexec/java_home -v 1.$v 2>/dev/null)
+  if [ $(echo $?) -eq 0 ]
+  then
+    export JAVA_${v}_HOME=$_JAVA_HOME
+    export JAVA_HOME=$_JAVA_HOME
+    alias java$v="export JAVA_HOME=\$JAVA_${v}_HOME"
+  fi
+done
 
 PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 PATH="/usr/local/sbin:/usr/local/bin:$PATH"
@@ -130,9 +135,6 @@ alias del="rmtrash"
 alias thrash="rmtrash"
 alias pa='ps aux | grep -v grep | grep'
 alias bd='. bd -si'
-alias java6='export JAVA_HOME=$JAVA_6_HOME'
-alias java7='export JAVA_HOME=$JAVA_7_HOME'
-alias java8='export JAVA_HOME=$JAVA_8_HOME'
 alias docker-rm='docker ps -aq | xargs --no-run-if-empty docker rm --force --volumes=true'
 alias docker-kill='docker ps -aq | xargs --no-run-if-empty docker kill'
 
